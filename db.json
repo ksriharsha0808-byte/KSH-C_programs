@@ -1,6 +1,29 @@
 {
   "trips": [
     {
+      "id": "trip-1790606958691",
+      "destination": "delhi",
+      "dates": {
+        "departure": "2026-10-12",
+        "return": "2026-10-15",
+        "durationDays": 4
+      },
+      "budget": {
+        "amount": 50000,
+        "currency": "INR (₹)",
+        "currencySymbol": "₹"
+      },
+      "travellers": {
+        "type": "Couple/Pair",
+        "count": 2
+      },
+      "preferences": {
+        "travelStyle": "Cultural & Historic",
+        "accommodation": "The Roseate, Delhi",
+        "pace": "Balanced"
+      }
+    },
+    {
       "id": "trip-1790256080753",
       "destination": "Venice, Italy",
       "dates": {
@@ -263,6 +286,114 @@
           "tip": "Write a short sweet note in your travel scrapbook."
         }
       }
+    },
+    {
+      "id": "trip-1790606958691-day-1",
+      "tripId": "trip-1790606958691",
+      "day": 1,
+      "city": "New Delhi",
+      "hotel": "The Roseate, Delhi",
+      "activities": {
+        "morning": {
+          "title": "Check‑in & Refresh",
+          "time": "09:00 AM - 12:00 PM",
+          "desc": "Arrive at Indira Gandhi International Airport, transfer to The Roseate, check‑in, unwind and enjoy a light breakfast at the hotel lounge.",
+          "tip": "Ask the concierge for a complimentary map of heritage sites."
+        },
+        "afternoon": {
+          "title": "Red Fort & Jama Masjid",
+          "time": "01:30 PM - 04:30 PM",
+          "desc": "Explore the UNESCO‑listed Red Fort, then walk to the majestic Jama Masjid, soaking in Mughal architecture and bustling street life.",
+          "tip": "Carry a reusable water bottle; there are plenty of cool shade spots nearby."
+        },
+        "evening": {
+          "title": "Chandni Chowk Food Walk",
+          "time": "06:30 PM - 09:00 PM",
+          "desc": "Stroll through Chandni Chowk, sampling chaat, kebabs, and jalebi at iconic stalls, ending with a ride on a traditional rickshaw.",
+          "tip": "Visit the nearby Paranthe Wali Gali for the best stuffed parathas."
+        }
+      }
+    },
+    {
+      "id": "trip-1790606958691-day-2",
+      "tripId": "trip-1790606958691",
+      "day": 2,
+      "city": "New Delhi",
+      "hotel": "The Roseate, Delhi",
+      "activities": {
+        "morning": {
+          "title": "Qutub Minar Complex",
+          "time": "09:00 AM - 12:00 PM",
+          "desc": "Visit the towering Qutub Minar, admire the intricate iron pillars and the ancient mosque ruins within the UNESCO site.",
+          "tip": "Early arrival avoids the mid‑day heat and crowds."
+        },
+        "afternoon": {
+          "title": "Humayun’s Tomb & Gardens",
+          "time": "01:30 PM - 04:30 PM",
+          "desc": "Tour the Mughal masterpiece Humayun’s Tomb, then relax in the surrounding Charbagh gardens, spotting peacocks and lotus ponds.",
+          "tip": "Grab a cup of masala chai from the on‑site café for a refreshing break."
+        },
+        "evening": {
+          "title": "Khan Market Dinner",
+          "time": "06:30 PM - 09:00 PM",
+          "desc": "Dine at a boutique restaurant in Khan Market, sampling modern Indian cuisine with a historic twist.",
+          "tip": "Reserve a table at 'Olive Bar & Kitchen' for a romantic rooftop setting."
+        }
+      }
+    },
+    {
+      "id": "trip-1790606958691-day-3",
+      "tripId": "trip-1790606958691",
+      "day": 3,
+      "city": "New Delhi",
+      "hotel": "The Roseate, Delhi",
+      "activities": {
+        "morning": {
+          "title": "India Gate & Rashtrapati Bhavan Walk",
+          "time": "09:00 AM - 12:00 PM",
+          "desc": "Stroll along Rajpath, photograph India Gate, and view the impressive façade of Rashtrapati Bhavan from the outside.",
+          "tip": "Bring a small flag or pin for a photo‑op at India Gate."
+        },
+        "afternoon": {
+          "title": "National Museum & Lodi Gardens",
+          "time": "01:30 PM - 04:30 PM",
+          "desc": "Explore India’s rich heritage at the National Museum, then unwind among the historic tombs and lush greenery of Lodi Gardens.",
+          "tip": "Rent a bicycle at Lodi Gardens for a quicker tour."
+        },
+        "evening": {
+          "title": "Cultural Evening at Kingdom of Dreams",
+          "time": "06:30 PM - 09:00 PM",
+          "desc": "Catch a live folk‑dance and music spectacle at Kingdom of Dreams, showcasing Rajasthan and Punjab traditions.",
+          "tip": "Book tickets in advance and opt for the dinner‑plus‑show combo for best value."
+        }
+      }
+    },
+    {
+      "id": "trip-1790606958691-day-4",
+      "tripId": "trip-1790606958691",
+      "day": 4,
+      "city": "New Delhi",
+      "hotel": "The Roseate, Delhi",
+      "activities": {
+        "morning": {
+          "title": "Dilli Haat Handicrafts",
+          "time": "09:00 AM - 12:00 PM",
+          "desc": "Browse regional crafts, buy souvenirs, and taste street‑food stalls representing different Indian states at Dilli Haat.",
+          "tip": "Haggle politely; most vendors enjoy friendly bargaining."
+        },
+        "afternoon": {
+          "title": "Leisure & Check‑out",
+          "time": "01:30 PM - 04:30 PM",
+          "desc": "Return to the hotel, enjoy a quick spa treatment or lounge by the pool before checking out.",
+          "tip": "Ask for a late‑checkout if your flight is later in the evening."
+        },
+        "evening": {
+          "title": "Airport Transfer",
+          "time": "06:30 PM - 09:00 PM",
+          "desc": "Private transfer to Indira Gandhi International Airport for your departure flight.",
+          "tip": "Confirm your flight time a day earlier and keep travel documents handy."
+        }
+      }
     }
   ],
   "packing": [
@@ -445,6 +576,60 @@
           "checked": false
         }
       ]
+    },
+    {
+      "id": "trip-1790606958691-packing",
+      "tripId": "trip-1790606958691",
+      "items": [
+        {
+          "id": 1790606958691,
+          "text": "Light jacket or sweater for cool evenings (average 18‑22°C)",
+          "cat": "clothes",
+          "checked": false
+        },
+        {
+          "id": 1790606958692,
+          "text": "Comfortable walking shoes",
+          "cat": "clothes",
+          "checked": false
+        },
+        {
+          "id": 1790606958693,
+          "text": "Sun hat, sunglasses, and sunscreen (SPF 30+)",
+          "cat": "clothes",
+          "checked": false
+        },
+        {
+          "id": 1790606958694,
+          "text": "Travel documents, IDs, and printed itinerary",
+          "cat": "documents",
+          "checked": false
+        },
+        {
+          "id": 1790606958695,
+          "text": "Portable charger and universal adapter (India uses Type C/D)",
+          "cat": "electronics",
+          "checked": false
+        },
+        {
+          "id": 1790606958696,
+          "text": "Toiletries kit (travel‑size shampoo, toothpaste, etc.)",
+          "cat": "toiletries",
+          "checked": false
+        },
+        {
+          "id": 1790606958697,
+          "text": "Camera or smartphone with extra storage",
+          "cat": "electronics",
+          "checked": false
+        },
+        {
+          "id": 1790606958698,
+          "text": "Small day‑pack for daily excursions",
+          "cat": "fun",
+          "checked": false
+        }
+      ]
     }
   ],
   "budget": [
@@ -555,6 +740,48 @@
         "total": 2400,
         "spent": 0,
         "remaining": 2400
+      },
+      "expenses": []
+    },
+    {
+      "id": "trip-1790606958691-budget",
+      "tripId": "trip-1790606958691",
+      "categories": [
+        {
+          "name": "Accommodation",
+          "allocated": 20000,
+          "spent": 0,
+          "color": "#BAE6FD"
+        },
+        {
+          "name": "Flights & Transit",
+          "allocated": 15000,
+          "spent": 0,
+          "color": "#C6F6D5"
+        },
+        {
+          "name": "Food & Cafes",
+          "allocated": 8000,
+          "spent": 0,
+          "color": "#FFF1B0"
+        },
+        {
+          "name": "Activities",
+          "allocated": 5000,
+          "spent": 0,
+          "color": "#FFCCD5"
+        },
+        {
+          "name": "Souvenirs",
+          "allocated": 2000,
+          "spent": 0,
+          "color": "#E9D5FF"
+        }
+      ],
+      "amounts": {
+        "total": 50000,
+        "spent": 0,
+        "remaining": 50000
       },
       "expenses": []
     }

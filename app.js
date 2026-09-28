@@ -906,10 +906,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         let aiResponse;
-        if (window.TM_API && window.TM_API.generateTrip) {
-          aiResponse = await TM_API.generateTrip(preferences);
+        const api = window.TM_API || (typeof TM_API !== "undefined" ? TM_API : null);
+        if (api && typeof api.generateTrip === "function") {
+          aiResponse = await api.generateTrip(preferences);
         } else {
-          throw new Error("Backend API unavailable");
+          throw new Error("Backend API unavailable — refresh http://localhost:3000 after starting node server.js");
         }
 
         // Apply generated data

@@ -205,3 +205,5 @@ const TM_DB = {
     });
   }
 };
+
+window.TM_DB = TM_DB;

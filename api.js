@@ -170,3 +170,5 @@ const TM_API = {
     }
   }
 };
+
+window.TM_API = TM_API;
