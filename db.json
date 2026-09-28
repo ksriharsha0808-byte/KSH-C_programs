@@ -1,0 +1,562 @@
+{
+  "trips": [
+    {
+      "id": "trip-1790256080753",
+      "destination": "Venice, Italy",
+      "dates": {
+        "departure": "2026-09-10",
+        "return": "2026-09-13",
+        "durationDays": 4
+      },
+      "budget": {
+        "amount": 2400,
+        "currency": "EUR (?)",
+        "currencySymbol": "?"
+      },
+      "travellers": {
+        "type": "Couple/Pair",
+        "count": 2
+      },
+      "preferences": {
+        "travelStyle": "Romantic",
+        "accommodation": "Canal View Boutique Hotel",
+        "pace": "Relaxed & Chill"
+      }
+    },
+    {
+      "id": "trip-kyoto",
+      "destination": "Kyoto, Japan",
+      "dates": {
+        "departure": "2026-10-12",
+        "return": "2026-10-15",
+        "durationDays": 4
+      },
+      "budget": {
+        "amount": 2500,
+        "currency": "USD ($)",
+        "currencySymbol": "$"
+      },
+      "travellers": {
+        "type": "Couple/Pair",
+        "count": 2
+      },
+      "preferences": {
+        "travelStyle": "Cultural & Historic",
+        "accommodation": "Gion Komachi Ryokan & Spa",
+        "pace": "Balanced"
+      }
+    }
+  ],
+  "itinerary": [
+    {
+      "id": "trip-kyoto-day-1",
+      "tripId": "trip-kyoto",
+      "day": 1,
+      "city": "Kyoto, Central & Arashiyama",
+      "hotel": "Gion Komachi Ryokan & Spa",
+      "activities": {
+        "morning": {
+          "title": "Check-in & Welcome Matcha Ceremony",
+          "time": "09:30 AM - 11:30 AM",
+          "desc": "Drop bags at cozy wooden ryokan. Savor warm wagashi sweets.",
+          "tip": "Slip into floral yukata robes!"
+        },
+        "afternoon": {
+          "title": "Arashiyama Bamboo Grove & Tenryu-ji",
+          "time": "01:00 PM - 04:30 PM",
+          "desc": "Wander through emerald bamboo stalks.",
+          "tip": "Grab soft-serve matcha ice cream."
+        },
+        "evening": {
+          "title": "Gion Lantern Walk & Kamo River Ramen",
+          "time": "06:30 PM - 09:00 PM",
+          "desc": "Walk along stone-paved canal illuminated by paper lanterns.",
+          "tip": "Sit tatami-style for steaming ramen."
+        }
+      }
+    },
+    {
+      "id": "trip-kyoto-day-2",
+      "tripId": "trip-kyoto",
+      "day": 2,
+      "city": "Kyoto, Southern Higashiyama",
+      "hotel": "Gion Komachi Ryokan & Spa",
+      "activities": {
+        "morning": {
+          "title": "Early Morning at Fushimi Inari Taisha",
+          "time": "07:30 AM - 10:30 AM",
+          "desc": "Hike through thousands of scarlet Torii gates.",
+          "tip": "Take quiet mountain path for city views."
+        },
+        "afternoon": {
+          "title": "Kiyomizu-dera & Sannenzaka Slopes",
+          "time": "01:00 PM - 04:00 PM",
+          "desc": "Marvel at the wooden temple stage.",
+          "tip": "Browse craft shops selling ceramics."
+        },
+        "evening": {
+          "title": "Pontocho Alley Foodie Crawl",
+          "time": "06:00 PM - 08:30 PM",
+          "desc": "Duck into cozy izakayas for charcoal yakitori.",
+          "tip": "Book river-facing terrace seating."
+        }
+      }
+    },
+    {
+      "id": "trip-kyoto-day-3",
+      "tripId": "trip-kyoto",
+      "day": 3,
+      "city": "Kyoto, Northern Higashiyama",
+      "hotel": "Gion Komachi Ryokan & Spa",
+      "activities": {
+        "morning": {
+          "title": "Kinkaku-ji (The Golden Pavilion)",
+          "time": "09:00 AM - 11:30 AM",
+          "desc": "Admire pavilion covered in gold leaf.",
+          "tip": "Buy an omikuji fortune slip."
+        },
+        "afternoon": {
+          "title": "Stroll the Philosopher's Path",
+          "time": "01:30 PM - 04:30 PM",
+          "desc": "Tranquil stone path along canal with cherry trees.",
+          "tip": "Stop for chilled udon noodles."
+        },
+        "evening": {
+          "title": "Cozy Ryokan Kaiseki Feast & Onsen",
+          "time": "07:00 PM - 09:30 PM",
+          "desc": "Multi-course seasonal dinner served in your room.",
+          "tip": "Perfect calm night to journal."
+        }
+      }
+    },
+    {
+      "id": "trip-kyoto-day-4",
+      "tripId": "trip-kyoto",
+      "day": 4,
+      "city": "Kyoto, Downtown & Station",
+      "hotel": "Gion Komachi Ryokan & Spa",
+      "activities": {
+        "morning": {
+          "title": "Nishiki Market Feast",
+          "time": "09:30 AM - 12:00 PM",
+          "desc": "Sample dashi tamagoyaki and strawberry daifuku.",
+          "tip": "Buy packaged ceremonial matcha."
+        },
+        "afternoon": {
+          "title": "Kyoto Botanical Gardens Stroll",
+          "time": "01:30 PM - 04:00 PM",
+          "desc": "Relax on wide green lawns with bento box.",
+          "tip": "Gentle unwind before transit."
+        },
+        "evening": {
+          "title": "Shinkansen Farewell Bento",
+          "time": "06:00 PM - 08:30 PM",
+          "desc": "Bullet train ride watching city neon lights fade.",
+          "tip": "Paste ticket stubs into scrapbook!"
+        }
+      }
+    },
+    {
+      "id": "trip-1790256080753-day-1",
+      "tripId": "trip-1790256080753",
+      "day": 1,
+      "city": "Venice, Italy Central",
+      "hotel": "Canal View Boutique Hotel",
+      "activities": {
+        "morning": {
+          "title": "Day 1: Morning Local Bakery & Iconic Landmark",
+          "time": "09:00 AM - 12:00 PM",
+          "desc": "Stroll through the morning streets of Venice, Italy. Soak in the Romantic ambiance.",
+          "tip": "Take a morning polaroid and save the cute receipt!"
+        },
+        "afternoon": {
+          "title": "Day 1: Cultural Discovery & Artisan Stalls",
+          "time": "01:30 PM - 04:30 PM",
+          "desc": "Visit local markets, gardens, and scenic spots tailored for Couple/Pair.",
+          "tip": "Carry your water bottle and comfortable walking shoes."
+        },
+        "evening": {
+          "title": "Day 1: Fairy-Lit Dinner & Scrapbook Time",
+          "time": "06:30 PM - 09:00 PM",
+          "desc": "Enjoy delicious regional food under warm lanterns. Journal down 3 highlights.",
+          "tip": "Write a short sweet note in your travel scrapbook."
+        }
+      }
+    },
+    {
+      "id": "trip-1790256080753-day-2",
+      "tripId": "trip-1790256080753",
+      "day": 2,
+      "city": "Venice, Italy Central",
+      "hotel": "Canal View Boutique Hotel",
+      "activities": {
+        "morning": {
+          "title": "Day 2: Morning Local Bakery & Iconic Landmark",
+          "time": "09:00 AM - 12:00 PM",
+          "desc": "Stroll through the morning streets of Venice, Italy. Soak in the Romantic ambiance.",
+          "tip": "Take a morning polaroid and save the cute receipt!"
+        },
+        "afternoon": {
+          "title": "Day 2: Cultural Discovery & Artisan Stalls",
+          "time": "01:30 PM - 04:30 PM",
+          "desc": "Visit local markets, gardens, and scenic spots tailored for Couple/Pair.",
+          "tip": "Carry your water bottle and comfortable walking shoes."
+        },
+        "evening": {
+          "title": "Day 2: Fairy-Lit Dinner & Scrapbook Time",
+          "time": "06:30 PM - 09:00 PM",
+          "desc": "Enjoy delicious regional food under warm lanterns. Journal down 3 highlights.",
+          "tip": "Write a short sweet note in your travel scrapbook."
+        }
+      }
+    },
+    {
+      "id": "trip-1790256080753-day-3",
+      "tripId": "trip-1790256080753",
+      "day": 3,
+      "city": "Venice, Italy Central",
+      "hotel": "Canal View Boutique Hotel",
+      "activities": {
+        "morning": {
+          "title": "Day 3: Morning Local Bakery & Iconic Landmark",
+          "time": "09:00 AM - 12:00 PM",
+          "desc": "Stroll through the morning streets of Venice, Italy. Soak in the Romantic ambiance.",
+          "tip": "Take a morning polaroid and save the cute receipt!"
+        },
+        "afternoon": {
+          "title": "Day 3: Cultural Discovery & Artisan Stalls",
+          "time": "01:30 PM - 04:30 PM",
+          "desc": "Visit local markets, gardens, and scenic spots tailored for Couple/Pair.",
+          "tip": "Carry your water bottle and comfortable walking shoes."
+        },
+        "evening": {
+          "title": "Day 3: Fairy-Lit Dinner & Scrapbook Time",
+          "time": "06:30 PM - 09:00 PM",
+          "desc": "Enjoy delicious regional food under warm lanterns. Journal down 3 highlights.",
+          "tip": "Write a short sweet note in your travel scrapbook."
+        }
+      }
+    },
+    {
+      "id": "trip-1790256080753-day-4",
+      "tripId": "trip-1790256080753",
+      "day": 4,
+      "city": "Venice, Italy Central",
+      "hotel": "Canal View Boutique Hotel",
+      "activities": {
+        "morning": {
+          "title": "Day 4: Morning Local Bakery & Iconic Landmark",
+          "time": "09:00 AM - 12:00 PM",
+          "desc": "Stroll through the morning streets of Venice, Italy. Soak in the Romantic ambiance.",
+          "tip": "Take a morning polaroid and save the cute receipt!"
+        },
+        "afternoon": {
+          "title": "Day 4: Cultural Discovery & Artisan Stalls",
+          "time": "01:30 PM - 04:30 PM",
+          "desc": "Visit local markets, gardens, and scenic spots tailored for Couple/Pair.",
+          "tip": "Carry your water bottle and comfortable walking shoes."
+        },
+        "evening": {
+          "title": "Day 4: Fairy-Lit Dinner & Scrapbook Time",
+          "time": "06:30 PM - 09:00 PM",
+          "desc": "Enjoy delicious regional food under warm lanterns. Journal down 3 highlights.",
+          "tip": "Write a short sweet note in your travel scrapbook."
+        }
+      }
+    }
+  ],
+  "packing": [
+    {
+      "id": "trip-kyoto-packing",
+      "tripId": "trip-kyoto",
+      "items": [
+        {
+          "id": 1,
+          "text": "Passport & copies",
+          "cat": "documents",
+          "checked": true
+        },
+        {
+          "id": 2,
+          "text": "Flight / Rail e-tickets",
+          "cat": "documents",
+          "checked": true
+        },
+        {
+          "id": 3,
+          "text": "Travel insurance card",
+          "cat": "documents",
+          "checked": true
+        },
+        {
+          "id": 4,
+          "text": "Comfortable walking sneakers",
+          "cat": "clothes",
+          "checked": true
+        },
+        {
+          "id": 5,
+          "text": "Light breeze cardigan & jacket",
+          "cat": "clothes",
+          "checked": true
+        },
+        {
+          "id": 6,
+          "text": "3x Linen shirts & tee",
+          "cat": "clothes",
+          "checked": true
+        },
+        {
+          "id": 7,
+          "text": "Cozy socks & sleepwear",
+          "cat": "clothes",
+          "checked": false
+        },
+        {
+          "id": 8,
+          "text": "Travel mini shampoo & soap",
+          "cat": "toiletries",
+          "checked": true
+        },
+        {
+          "id": 9,
+          "text": "Sunscreen SPF 50+",
+          "cat": "toiletries",
+          "checked": true
+        },
+        {
+          "id": 10,
+          "text": "Toothbrush & mint paste",
+          "cat": "toiletries",
+          "checked": true
+        },
+        {
+          "id": 11,
+          "text": "Universal power adapter plug",
+          "cat": "electronics",
+          "checked": true
+        },
+        {
+          "id": 12,
+          "text": "Portable power bank 10,000mAh",
+          "cat": "electronics",
+          "checked": true
+        },
+        {
+          "id": 13,
+          "text": "Camera & memory card",
+          "cat": "electronics",
+          "checked": false
+        },
+        {
+          "id": 14,
+          "text": "Earphones / AirPods",
+          "cat": "electronics",
+          "checked": true
+        },
+        {
+          "id": 15,
+          "text": "Hand-held travel journal & pen",
+          "cat": "fun",
+          "checked": true
+        },
+        {
+          "id": 16,
+          "text": "Matcha KitKats & gummy snacks",
+          "cat": "fun",
+          "checked": true
+        },
+        {
+          "id": 17,
+          "text": "Cute washi tape & stickers",
+          "cat": "fun",
+          "checked": true
+        },
+        {
+          "id": 18,
+          "text": "Foldable tote bag for shopping",
+          "cat": "fun",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "id": "trip-1790256080753-packing",
+      "tripId": "trip-1790256080753",
+      "items": [
+        {
+          "id": 1790256080753,
+          "text": "Passport & ID cards",
+          "cat": "documents",
+          "checked": false
+        },
+        {
+          "id": 1790256080754,
+          "text": "Travel tickets & vouchers",
+          "cat": "documents",
+          "checked": false
+        },
+        {
+          "id": 1790256080755,
+          "text": "Weather-appropriate jacket & layers",
+          "cat": "clothes",
+          "checked": false
+        },
+        {
+          "id": 1790256080756,
+          "text": "Comfortable exploration sneakers",
+          "cat": "clothes",
+          "checked": false
+        },
+        {
+          "id": 1790256080757,
+          "text": "Sunscreen & daily skincare",
+          "cat": "toiletries",
+          "checked": false
+        },
+        {
+          "id": 1790256080758,
+          "text": "Universal travel plug adapter",
+          "cat": "electronics",
+          "checked": false
+        },
+        {
+          "id": 1790256080759,
+          "text": "Power bank charger",
+          "cat": "electronics",
+          "checked": false
+        },
+        {
+          "id": 1790256080760,
+          "text": "Handheld camera / polaroid",
+          "cat": "electronics",
+          "checked": false
+        },
+        {
+          "id": 1790256080761,
+          "text": "Scrapbook travel journal & pens",
+          "cat": "fun",
+          "checked": false
+        },
+        {
+          "id": 1790256080762,
+          "text": "Local walking snacks & mints",
+          "cat": "fun",
+          "checked": false
+        }
+      ]
+    }
+  ],
+  "budget": [
+    {
+      "id": "trip-kyoto-budget",
+      "tripId": "trip-kyoto",
+      "categories": [
+        {
+          "name": "Accommodation",
+          "allocated": 1000,
+          "spent": 750,
+          "color": "#BAE6FD"
+        },
+        {
+          "name": "Flights & Transit",
+          "allocated": 650,
+          "spent": 420,
+          "color": "#C6F6D5"
+        },
+        {
+          "name": "Food & Cafes",
+          "allocated": 500,
+          "spent": 180,
+          "color": "#FFF1B0"
+        },
+        {
+          "name": "Activities",
+          "allocated": 200,
+          "spent": 45,
+          "color": "#FFCCD5"
+        },
+        {
+          "name": "Souvenirs",
+          "allocated": 150,
+          "spent": 25,
+          "color": "#E9D5FF"
+        }
+      ],
+      "amounts": {
+        "total": 2500,
+        "spent": 1420,
+        "remaining": 1080
+      },
+      "expenses": [
+        {
+          "title": "Ryokan 2-night deposit",
+          "cat": "Accommodation",
+          "amount": 450
+        },
+        {
+          "title": "Kansai Haruka Express Train",
+          "cat": "Flights & Transit",
+          "amount": 75
+        },
+        {
+          "title": "Gion Kaiseki Tasting Set",
+          "cat": "Food & Cafes",
+          "amount": 95
+        },
+        {
+          "title": "Bamboo Grove Matcha Cones",
+          "cat": "Food & Cafes",
+          "amount": 12
+        },
+        {
+          "title": "Ceramic Sake Cup Souvenir",
+          "cat": "Souvenirs",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": "trip-1790256080753-budget",
+      "tripId": "trip-1790256080753",
+      "categories": [
+        {
+          "name": "Accommodation",
+          "allocated": 960,
+          "spent": 0,
+          "color": "#BAE6FD"
+        },
+        {
+          "name": "Flights & Transit",
+          "allocated": 600,
+          "spent": 0,
+          "color": "#C6F6D5"
+        },
+        {
+          "name": "Food & Cafes",
+          "allocated": 480,
+          "spent": 0,
+          "color": "#FFF1B0"
+        },
+        {
+          "name": "Activities",
+          "allocated": 240,
+          "spent": 0,
+          "color": "#FFCCD5"
+        },
+        {
+          "name": "Souvenirs",
+          "allocated": 120,
+          "spent": 0,
+          "color": "#E9D5FF"
+        }
+      ],
+      "amounts": {
+        "total": 2400,
+        "spent": 0,
+        "remaining": 2400
+      },
+      "expenses": []
+    }
+  ]
+}
