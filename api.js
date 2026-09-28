@@ -3,16 +3,45 @@
 // frontend -> backend -> database -> backend -> frontend
 // ========================================================
 
-const API_BASE = window.location.origin.startsWith('http') ? window.location.origin : 'http://localhost:3000';
+// Always talk to the Node backend on port 3000.
+// Live Server / file:// / other preview ports caused "Failed to fetch"
+// because fetch went to that preview origin (no /generate-trip API there).
+function resolveApiBase() {
+  const origin = window.location.origin || '';
+  const port = String(window.location.port || '');
+  if (/^https?:/i.test(origin) && (port === '3000' || /:3000$/i.test(origin))) {
+    return origin;
+  }
+  return 'http://localhost:3000';
+}
+
+const API_BASE = resolveApiBase();
+
+function networkError(err) {
+  const msg = (err && err.message) ? err.message : String(err);
+  if (err && (err.name === 'TypeError' || /failed to fetch|networkerror|load failed/i.test(msg))) {
+    return new Error(
+      `Failed to reach TravelMate backend at ${API_BASE}. ` +
+      'Do not use Live Server for this app. In VS Code run: node server.js ' +
+      'then open http://localhost:3000'
+    );
+  }
+  return err;
+}
 
 const TM_API = {
   // 0. Generate trip via backend Groq AI endpoint (/generate-trip)
   async generateTrip(preferences) {
-    const res = await fetch(`${API_BASE}/generate-trip`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(preferences)
-    });
+    let res;
+    try {
+      res = await fetch(`${API_BASE}/generate-trip`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(preferences)
+      });
+    } catch (e) {
+      throw networkError(e);
+    }
     if (!res.ok) {
       const errBody = await res.json().catch(() => ({}));
       const err = new Error(errBody.error || `HTTP ${res.status}`);

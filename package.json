@@ -1,0 +1,9 @@
+{
+  "name": "travelmate",
+  "private": true,
+  "description": "TravelMate scrapbook travel planner (Node static server + Groq AI)",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

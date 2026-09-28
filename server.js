@@ -29,8 +29,12 @@ function loadEnv() {
         const idx = trimmed.indexOf('=');
         if (idx !== -1) {
           const key = trimmed.slice(0, idx).trim();
-          const val = trimmed.slice(idx + 1).trim();
-          if (key) {
+          let val = trimmed.slice(idx + 1).trim();
+          if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+            val = val.slice(1, -1);
+          }
+          // Do not overwrite keys already set in the environment
+          if (key && process.env[key] === undefined) {
             process.env[key] = val;
           }
         }
@@ -258,10 +262,10 @@ function generateFallbackAIPlan(pref) {
 
 // Call Groq AI API (openai/gpt-oss-120b)
 async function callGroqAI(pref) {
-  const apiKey = process.env.XAI_API_KEY || process.env.GROQ_API_KEY;
+  const apiKey = (process.env.XAI_API_KEY || process.env.GROQ_API_KEY || '').trim();
 
-  if (!apiKey) {
-    throw new Error("Missing XAI_API_KEY: please set XAI_API_KEY in the server-side .env file.");
+  if (!apiKey || apiKey === '$$$$$' || apiKey.toLowerCase().includes('your_')) {
+    throw new Error("Missing XAI_API_KEY: put your Groq key (starts with gsk_) in the project .env file as XAI_API_KEY.");
   }
 
   const prompt = `You are TravelMate's travel planner.
@@ -384,6 +388,13 @@ const server = http.createServer(async (req, res) => {
   const pathname = url.pathname;
 
   // ================= API ENDPOINTS =================
+
+  if ((pathname === '/api/health' || pathname === '/health') && req.method === 'GET') {
+    const hasKey = !!(process.env.XAI_API_KEY || process.env.GROQ_API_KEY);
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ ok: true, groqKeyConfigured: hasKey }));
+    return;
+  }
 
   // 1. POST /generate-trip or /api/generate-trip (Groq AI Trip Generation)
   if ((pathname === '/generate-trip' || pathname === '/api/generate-trip') && req.method === 'POST') {
@@ -670,9 +681,9 @@ const server = http.createServer(async (req, res) => {
   if (safePath === '/' || safePath === '\\') safePath = '/index.html';
 
   // Block sensitive files from being served
-  const blocked = ['.env', '.env.example', 'db.json', 'server.js', '.gitignore'];
+  const blocked = ['.env', '.env.example', 'db.json', 'server.js', '.gitignore', 'package.json', 'package-lock.json'];
   const baseFilename = path.basename(safePath);
-  if (blocked.includes(baseFilename) || baseFilename.startsWith('.')) {
+  if (blocked.includes(baseFilename) || baseFilename.startsWith('.') || baseFilename.toLowerCase().endsWith('.env')) {
     res.writeHead(403, { 'Content-Type': 'text/plain' });
     res.end('Forbidden');
     return;
@@ -705,5 +716,7 @@ process.on('unhandledRejection', (reason) => {
 // Start Server
 readDB();
 server.listen(PORT, () => {
-  console.log(`✈️ TravelMate backend server running at http://localhost:${PORT}`);
+  const hasKey = !!(process.env.XAI_API_KEY || process.env.GROQ_API_KEY);
+  console.log(`✈️ TravelMate backend running at http://localhost:${PORT}`);
+  console.log(`   Open that URL in the browser (not Live Server). Groq key loaded: ${hasKey ? 'yes' : 'NO — check .env'}`);
 });

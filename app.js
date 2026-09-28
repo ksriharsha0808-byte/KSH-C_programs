@@ -619,7 +619,7 @@ async function viewTripDetail(tripId) {
       travelStyle: bundle.trip.preferences.travelStyle,
       accommodation: bundle.trip.preferences.accommodation,
       pace: bundle.trip.preferences.pace,
-      daysData: bundle.itinerary.map(it => ({
+        daysData: (bundle.itinerary || []).map(it => ({
         dayNum: it.day,
         title: it.activities.morning ? it.activities.morning.title : `Day ${it.day}`,
         city: it.city,
